@@ -1,0 +1,5 @@
+Paquete A009 — cierre_aula_01
+Copia entrada/ a tu repositorio y conserva asignacion.json en la raíz.
+No modifiques estos originales. Usa copias para las pruebas de fallo.
+Aplica las instrucciones y los resultados de referencia de la práctica.
+Registra el código asignado en tu README.
