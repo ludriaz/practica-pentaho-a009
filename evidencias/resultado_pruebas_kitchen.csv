@@ -1,0 +1,7 @@
+prueba;resultado
+Primera ejecución;OK: job completo en Kitchen
+Repetición;OK: job completo sin duplicar salidas
+Falta de entrada;OK: job fallido y sin salidas publicadas
+Informe solo con cabecera;OK: validador lo rechaza
+Total incorrecto;OK: validador lo rechaza
+Recuperación;OK: originales procesados y salidas publicadas

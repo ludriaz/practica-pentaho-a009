@@ -1,0 +1,7 @@
+﻿prueba;resultado;observacion
+Primera ejecución (contraste de resultados);OK;Compara ambos resultados provisionales con una recomputación independiente de entrada/.
+Repetición (prueba lógica, sin Kitchen);OK;"La regeneración independiente conserva las filas y totales; no acredita una segunda ejecución PDI."
+Falta de entrada (prueba lógica);OK;La entrada de hoteles se omite en una copia temporal y se detecta como ausente.
+Informe solo con cabecera;OK;La validación independiente rechaza el informe sin filas.
+Total incorrecto;OK;"Se altera una copia; el total deja de coincidir y la validación falla."
+Recuperación con originales;OK;Tras las pruebas aisladas, los originales y resultados base siguen pasando el contraste.
