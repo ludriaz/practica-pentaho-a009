@@ -1,459 +1,81 @@
-DEBUG: Using JAVA_HOME
-
-DEBUG: _PENTAHO_JAVA_HOME=${RUTA}/jdk8u512-b09
-
-DEBUG: _PENTAHO_JAVA=${RUTA}/java.exe
-
-Acceso denegado.
-
-El sistema no puede encontrar la ruta especificada.
-
-Acceso denegado.
-
-
-
-${RUTA}/data-integration>"${RUTA}/java.exe"   "-Xms1024m" "-Xmx2048m" "-Djava.library.path=libswt\win64;/bin" "-Djava.endorsed.dirs=${RUTA}/endorsed"  "-DKETTLE_HOME=" "-DKETTLE_REPOSITORY=" "-DKETTLE_USER=" "-DKETTLE_PASSWORD=" "-DKETTLE_PLUGIN_PACKAGES=" "-DKETTLE_LOG_SIZE_LIMIT=" "-DKETTLE_JNDI_ROOT=" -jar launcher\launcher.jar -lib ..\libswt\win64  -main org.pentaho.di.kitchen.Kitchen -initialDir "${RUTA}/data-integration"\ /file:"${RUTA}/cierre_hotel.kjb" /level:Basic
-
-2026-11-24 22:39:50,747 main ERROR RollingFileManager (logs/pdi.log) java.io.FileNotFoundException: logs\pdi.log (Acceso denegado) java.io.FileNotFoundException: logs\pdi.log (Acceso denegado)
-
-	at java.io.FileOutputStream.open0(Native Method)
-
-	at java.io.FileOutputStream.open(FileOutputStream.java:270)
-
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
-
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:133)
-
-	at org.apache.logging.log4j.core.appender.rolling.RollingFileManager$RollingFileManagerFactory.createManager(RollingFileManager.java:746)
-
-	at org.apache.logging.log4j.core.appender.rolling.RollingFileManager$RollingFileManagerFactory.createManager(RollingFileManager.java:716)
-
-	at org.apache.logging.log4j.core.appender.AbstractManager.getManager(AbstractManager.java:114)
-
-	at org.apache.logging.log4j.core.appender.OutputStreamManager.getManager(OutputStreamManager.java:100)
-
-	at org.apache.logging.log4j.core.appender.rolling.RollingFileManager.getFileManager(RollingFileManager.java:217)
-
-	at org.apache.logging.log4j.core.appender.RollingFileAppender$Builder.build(RollingFileAppender.java:146)
-
-	at org.apache.logging.log4j.core.appender.RollingFileAppender$Builder.build(RollingFileAppender.java:62)
-
-	at org.apache.logging.log4j.core.config.plugins.util.PluginBuilder.build(PluginBuilder.java:122)
-
-	at org.apache.logging.log4j.core.config.AbstractConfiguration.createPluginObject(AbstractConfiguration.java:1120)
-
-	at org.apache.logging.log4j.core.config.AbstractConfiguration.createConfiguration(AbstractConfiguration.java:1045)
-
-	at org.apache.logging.log4j.core.config.AbstractConfiguration.createConfiguration(AbstractConfiguration.java:1037)
-
-	at org.apache.logging.log4j.core.config.AbstractConfiguration.doConfigure(AbstractConfiguration.java:651)
-
-	at org.apache.logging.log4j.core.config.AbstractConfiguration.initialize(AbstractConfiguration.java:247)
-
-	at org.apache.logging.log4j.core.config.AbstractConfiguration.start(AbstractConfiguration.java:293)
-
-	at org.apache.logging.log4j.core.LoggerContext.setConfiguration(LoggerContext.java:626)
-
-	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:699)
-
-	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:716)
-
-	at org.apache.logging.log4j.core.LoggerContext.start(LoggerContext.java:270)
-
-	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:155)
-
-	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:47)
-
-	at org.apache.logging.log4j.LogManager.getContext(LogManager.java:196)
-
-	at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getContext(AbstractLoggerAdapter.java:137)
-
-	at org.apache.logging.slf4j.Log4jLoggerFactory.getContext(Log4jLoggerFactory.java:55)
-
-	at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getLogger(AbstractLoggerAdapter.java:47)
-
-	at org.apache.logging.slf4j.Log4jLoggerFactory.getLogger(Log4jLoggerFactory.java:33)
-
-	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:284)
-
-	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:304)
-
-	at org.pentaho.di.i18n.GlobalMessageUtil.<clinit>(GlobalMessageUtil.java:50)
-
-	at org.pentaho.di.i18n.LAFMessageHandler.calculateString(LAFMessageHandler.java:94)
-
-	at org.pentaho.di.i18n.GlobalMessages.getString(GlobalMessages.java:177)
-
-	at org.pentaho.di.i18n.BaseMessages.getString(BaseMessages.java:86)
-
-	at org.pentaho.di.core.logging.LogLevel.<clinit>(LogLevel.java:36)
-
-	at org.pentaho.di.core.logging.DefaultLogLevel.<init>(DefaultLogLevel.java:36)
-
-	at org.pentaho.di.core.logging.DefaultLogLevel.getInstance(DefaultLogLevel.java:41)
-
-	at org.pentaho.di.core.logging.DefaultLogLevel.getLogLevel(DefaultLogLevel.java:50)
-
-	at org.pentaho.di.core.logging.LogChannel.<init>(LogChannel.java:80)
-
-	at org.pentaho.di.core.logging.LogChannel.<clinit>(LogChannel.java:41)
-
-	at org.pentaho.di.core.plugins.BasePluginType.<init>(BasePluginType.java:82)
-
-	at org.pentaho.di.core.plugins.BasePluginType.<init>(BasePluginType.java:95)
-
-	at org.pentaho.di.core.plugins.RepositoryPluginType.<init>(RepositoryPluginType.java:54)
-
-	at org.pentaho.di.core.plugins.RepositoryPluginType.getInstance(RepositoryPluginType.java:64)
-
-	at org.pentaho.di.kitchen.Kitchen.main(Kitchen.java:73)
-
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-
-	at java.lang.reflect.Method.invoke(Method.java:498)
-
-	at org.pentaho.commons.launcher.Launcher.main(Launcher.java:92)
-
-
-
-2026-11-24 22:39:50,752 main ERROR Could not create plugin of type class org.apache.logging.log4j.core.appender.RollingFileAppender for element RollingFile: java.lang.IllegalStateException: ManagerFactory [org.apache.logging.log4j.core.appender.rolling.RollingFileManager$RollingFileManagerFactory@7bedc48a] unable to create manager for [logs/pdi.log] with data [org.apache.logging.log4j.core.appender.rolling.RollingFileManager$FactoryData@131ef10[pattern=logs/pdi.%d{yyyy-MM-dd}.log, append=true, bufferedIO=true, bufferSize=8192, policy=CompositeTriggeringPolicy(policies=[TimeBasedTriggeringPolicy(nextRolloverMillis=0, interval=1, modulate=false)]), strategy=DefaultRolloverStrategy(min=1, max=7, useMax=true), advertiseURI=null, layout=%d{yyyy-MM-dd HH:mm:ss.SSS} %-5p <%t> %m%n, filePermissions=null, fileOwner=null]] java.lang.IllegalStateException: ManagerFactory [org.apache.logging.log4j.core.appender.rolling.RollingFileManager$RollingFileManagerFactory@7bedc48a] unable to create manager for [logs/pdi.log] with data [org.apache.logging.log4j.core.appender.rolling.RollingFileManager$FactoryData@131ef10[pattern=logs/pdi.%d{yyyy-MM-dd}.log, append=true, bufferedIO=true, bufferSize=8192, policy=CompositeTriggeringPolicy(policies=[TimeBasedTriggeringPolicy(nextRolloverMillis=0, interval=1, modulate=false)]), strategy=DefaultRolloverStrategy(min=1, max=7, useMax=true), advertiseURI=null, layout=%d{yyyy-MM-dd HH:mm:ss.SSS} %-5p <%t> %m%n, filePermissions=null, fileOwner=null]]
-
-	at org.apache.logging.log4j.core.appender.AbstractManager.getManager(AbstractManager.java:116)
-
-	at org.apache.logging.log4j.core.appender.OutputStreamManager.getManager(OutputStreamManager.java:100)
-
-	at org.apache.logging.log4j.core.appender.rolling.RollingFileManager.getFileManager(RollingFileManager.java:217)
-
-	at org.apache.logging.log4j.core.appender.RollingFileAppender$Builder.build(RollingFileAppender.java:146)
-
-	at org.apache.logging.log4j.core.appender.RollingFileAppender$Builder.build(RollingFileAppender.java:62)
-
-	at org.apache.logging.log4j.core.config.plugins.util.PluginBuilder.build(PluginBuilder.java:122)
-
-	at org.apache.logging.log4j.core.config.AbstractConfiguration.createPluginObject(AbstractConfiguration.java:1120)
-
-	at org.apache.logging.log4j.core.config.AbstractConfiguration.createConfiguration(AbstractConfiguration.java:1045)
-
-	at org.apache.logging.log4j.core.config.AbstractConfiguration.createConfiguration(AbstractConfiguration.java:1037)
-
-	at org.apache.logging.log4j.core.config.AbstractConfiguration.doConfigure(AbstractConfiguration.java:651)
-
-	at org.apache.logging.log4j.core.config.AbstractConfiguration.initialize(AbstractConfiguration.java:247)
-
-	at org.apache.logging.log4j.core.config.AbstractConfiguration.start(AbstractConfiguration.java:293)
-
-	at org.apache.logging.log4j.core.LoggerContext.setConfiguration(LoggerContext.java:626)
-
-	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:699)
-
-	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:716)
-
-	at org.apache.logging.log4j.core.LoggerContext.start(LoggerContext.java:270)
-
-	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:155)
-
-	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:47)
-
-	at org.apache.logging.log4j.LogManager.getContext(LogManager.java:196)
-
-	at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getContext(AbstractLoggerAdapter.java:137)
-
-	at org.apache.logging.slf4j.Log4jLoggerFactory.getContext(Log4jLoggerFactory.java:55)
-
-	at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getLogger(AbstractLoggerAdapter.java:47)
-
-	at org.apache.logging.slf4j.Log4jLoggerFactory.getLogger(Log4jLoggerFactory.java:33)
-
-	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:284)
-
-	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:304)
-
-	at org.pentaho.di.i18n.GlobalMessageUtil.<clinit>(GlobalMessageUtil.java:50)
-
-	at org.pentaho.di.i18n.LAFMessageHandler.calculateString(LAFMessageHandler.java:94)
-
-	at org.pentaho.di.i18n.GlobalMessages.getString(GlobalMessages.java:177)
-
-	at org.pentaho.di.i18n.BaseMessages.getString(BaseMessages.java:86)
-
-	at org.pentaho.di.core.logging.LogLevel.<clinit>(LogLevel.java:36)
-
-	at org.pentaho.di.core.logging.DefaultLogLevel.<init>(DefaultLogLevel.java:36)
-
-	at org.pentaho.di.core.logging.DefaultLogLevel.getInstance(DefaultLogLevel.java:41)
-
-	at org.pentaho.di.core.logging.DefaultLogLevel.getLogLevel(DefaultLogLevel.java:50)
-
-	at org.pentaho.di.core.logging.LogChannel.<init>(LogChannel.java:80)
-
-	at org.pentaho.di.core.logging.LogChannel.<clinit>(LogChannel.java:41)
-
-	at org.pentaho.di.core.plugins.BasePluginType.<init>(BasePluginType.java:82)
-
-	at org.pentaho.di.core.plugins.BasePluginType.<init>(BasePluginType.java:95)
-
-	at org.pentaho.di.core.plugins.RepositoryPluginType.<init>(RepositoryPluginType.java:54)
-
-	at org.pentaho.di.core.plugins.RepositoryPluginType.getInstance(RepositoryPluginType.java:64)
-
-	at org.pentaho.di.kitchen.Kitchen.main(Kitchen.java:73)
-
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-
-	at java.lang.reflect.Method.invoke(Method.java:498)
-
-	at org.pentaho.commons.launcher.Launcher.main(Launcher.java:92)
-
-
-
-2026-11-24 22:39:50,753 main ERROR Unable to invoke factory method in class org.apache.logging.log4j.core.appender.RollingFileAppender for element RollingFile: java.lang.IllegalStateException: No factory method found for class org.apache.logging.log4j.core.appender.RollingFileAppender java.lang.IllegalStateException: No factory method found for class org.apache.logging.log4j.core.appender.RollingFileAppender
-
-	at org.apache.logging.log4j.core.config.plugins.util.PluginBuilder.findFactoryMethod(PluginBuilder.java:236)
-
-	at org.apache.logging.log4j.core.config.plugins.util.PluginBuilder.build(PluginBuilder.java:134)
-
-	at org.apache.logging.log4j.core.config.AbstractConfiguration.createPluginObject(AbstractConfiguration.java:1120)
-
-	at org.apache.logging.log4j.core.config.AbstractConfiguration.createConfiguration(AbstractConfiguration.java:1045)
-
-	at org.apache.logging.log4j.core.config.AbstractConfiguration.createConfiguration(AbstractConfiguration.java:1037)
-
-	at org.apache.logging.log4j.core.config.AbstractConfiguration.doConfigure(AbstractConfiguration.java:651)
-
-	at org.apache.logging.log4j.core.config.AbstractConfiguration.initialize(AbstractConfiguration.java:247)
-
-	at org.apache.logging.log4j.core.config.AbstractConfiguration.start(AbstractConfiguration.java:293)
-
-	at org.apache.logging.log4j.core.LoggerContext.setConfiguration(LoggerContext.java:626)
-
-	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:699)
-
-	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:716)
-
-	at org.apache.logging.log4j.core.LoggerContext.start(LoggerContext.java:270)
-
-	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:155)
-
-	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:47)
-
-	at org.apache.logging.log4j.LogManager.getContext(LogManager.java:196)
-
-	at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getContext(AbstractLoggerAdapter.java:137)
-
-	at org.apache.logging.slf4j.Log4jLoggerFactory.getContext(Log4jLoggerFactory.java:55)
-
-	at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getLogger(AbstractLoggerAdapter.java:47)
-
-	at org.apache.logging.slf4j.Log4jLoggerFactory.getLogger(Log4jLoggerFactory.java:33)
-
-	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:284)
-
-	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:304)
-
-	at org.pentaho.di.i18n.GlobalMessageUtil.<clinit>(GlobalMessageUtil.java:50)
-
-	at org.pentaho.di.i18n.LAFMessageHandler.calculateString(LAFMessageHandler.java:94)
-
-	at org.pentaho.di.i18n.GlobalMessages.getString(GlobalMessages.java:177)
-
-	at org.pentaho.di.i18n.BaseMessages.getString(BaseMessages.java:86)
-
-	at org.pentaho.di.core.logging.LogLevel.<clinit>(LogLevel.java:36)
-
-	at org.pentaho.di.core.logging.DefaultLogLevel.<init>(DefaultLogLevel.java:36)
-
-	at org.pentaho.di.core.logging.DefaultLogLevel.getInstance(DefaultLogLevel.java:41)
-
-	at org.pentaho.di.core.logging.DefaultLogLevel.getLogLevel(DefaultLogLevel.java:50)
-
-	at org.pentaho.di.core.logging.LogChannel.<init>(LogChannel.java:80)
-
-	at org.pentaho.di.core.logging.LogChannel.<clinit>(LogChannel.java:41)
-
-	at org.pentaho.di.core.plugins.BasePluginType.<init>(BasePluginType.java:82)
-
-	at org.pentaho.di.core.plugins.BasePluginType.<init>(BasePluginType.java:95)
-
-	at org.pentaho.di.core.plugins.RepositoryPluginType.<init>(RepositoryPluginType.java:54)
-
-	at org.pentaho.di.core.plugins.RepositoryPluginType.getInstance(RepositoryPluginType.java:64)
-
-	at org.pentaho.di.kitchen.Kitchen.main(Kitchen.java:73)
-
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-
-	at java.lang.reflect.Method.invoke(Method.java:498)
-
-	at org.pentaho.commons.launcher.Launcher.main(Launcher.java:92)
-
-
-
-2026-11-24 22:39:50,754 main ERROR Null object returned for RollingFile in Appenders.
-
-2026-11-24 22:39:50,762 main ERROR Unable to locate appender "pdi-execution-appender" for logger config "org.pentaho.di.trans.Trans"
-
-2026-11-24 22:39:50,762 main ERROR Unable to locate appender "pdi-execution-appender" for logger config "org.pentaho.di.job.Job"
-
-2026/11/24 22:39:51 - Kitchen - Logging is at level : Basic
-
-2026/11/24 22:39:51 - Kitchen - Start of run.
-
-2026/11/24 22:39:54 - cierre_hotel - Start of job execution
-
-2026/11/24 22:39:54 - cierre_hotel - Starting entry [informe_cobros]
-
-2026/11/24 22:39:54 - Leer_cobros - Iniciado despacho de la transformaci?n [Leer_cobros]
-
-2026/11/24 22:39:54 - Leer reservas.0 - Header row skipped in file '${RUTA}/reservas_pdi.csv'
-
-2026/11/24 22:39:54 - Leer_cobros.0 - Header row skipped in file '${RUTA}/cobros_pdi.csv'
-
-2026/11/24 22:39:54 - Leer_hoteles.0 - Header row skipped in file '${RUTA}/hoteles_pdi.csv'
-
-2026/11/24 22:39:54 - Leer_hoteles.0 - Procesamiento finalizado (I=6, O=0, R=0, W=5, U=0, E=0)
-
-2026/11/24 22:39:54 - Leer_cobros.0 - Procesamiento finalizado (I=16, O=0, R=0, W=15, U=0, E=0)
-
-2026/11/24 22:39:54 - Leer reservas.0 - Procesamiento finalizado (I=21, O=0, R=0, W=20, U=0, E=0)
-
-2026/11/24 22:39:54 - Ordenar hoteles por id_hotel.0 - Procesamiento finalizado (I=0, O=0, R=5, W=5, U=0, E=0)
-
-2026/11/24 22:39:54 - Ordenar cobros por id_reserva.0 - Procesamiento finalizado (I=0, O=0, R=15, W=15, U=0, E=0)
-
-2026/11/24 22:39:54 - Ordenar reservas por id_reserva.0 - Procesamiento finalizado (I=0, O=0, R=20, W=20, U=0, E=0)
-
-2026/11/24 22:39:54 - Unir reservas y cobros.0 - Procesamiento finalizado (I=0, O=0, R=35, W=15, U=0, E=0)
-
-2026/11/24 22:39:54 - Ordenar cobros unidos por id_hotel.0 - Procesamiento finalizado (I=0, O=0, R=15, W=15, U=0, E=0)
-
-2026/11/24 22:39:54 - A�adir nombre del hotel.0 - Procesamiento finalizado (I=0, O=0, R=20, W=15, U=0, E=0)
-
-2026/11/24 22:39:54 - Ordenar por hotel y canal.0 - Procesamiento finalizado (I=0, O=0, R=15, W=15, U=0, E=0)
-
-2026/11/24 22:39:54 - Agrupar cobros por hotel y canal.0 - Procesamiento finalizado (I=0, O=0, R=15, W=13, U=0, E=0)
-
-2026/11/24 22:39:54 - Escribir informe provisional.0 - Procesamiento finalizado (I=0, O=14, R=13, W=13, U=0, E=0)
-
-2026/11/24 22:39:54 - cierre_hotel - Starting entry [reservas_sin_cobro]
-
-2026/11/24 22:39:54 - Escribir reservas sin cobro - Iniciado despacho de la transformaci?n [Escribir reservas sin cobro]
-
-2026/11/24 22:39:54 - Leer cobros.0 - Header row skipped in file '${RUTA}/cobros_pdi.csv'
-
-2026/11/24 22:39:54 - Leer reservas.0 - Header row skipped in file '${RUTA}/reservas_pdi.csv'
-
-2026/11/24 22:39:54 - Leer hoteles.0 - Header row skipped in file '${RUTA}/hoteles_pdi.csv'
-
-2026/11/24 22:39:54 - Leer hoteles.0 - Procesamiento finalizado (I=6, O=0, R=0, W=5, U=0, E=0)
-
-2026/11/24 22:39:54 - Leer cobros.0 - Procesamiento finalizado (I=16, O=0, R=0, W=15, U=0, E=0)
-
-2026/11/24 22:39:54 - Leer reservas.0 - Procesamiento finalizado (I=21, O=0, R=0, W=20, U=0, E=0)
-
-2026/11/24 22:39:54 - Preparar clave de cobros.0 - Procesamiento finalizado (I=0, O=0, R=15, W=15, U=0, E=0)
-
-2026/11/24 22:39:54 - Ordenar hoteles por id_hotel.0 - Procesamiento finalizado (I=0, O=0, R=5, W=5, U=0, E=0)
-
-2026/11/24 22:39:54 - Ordenar reservas por id_reserva.0 - Procesamiento finalizado (I=0, O=0, R=20, W=20, U=0, E=0)
-
-2026/11/24 22:39:54 - Ordenar cobros por clave.0 - Procesamiento finalizado (I=0, O=0, R=15, W=15, U=0, E=0)
-
-2026/11/24 22:39:55 - Relacionar reservas con cobros.0 - Procesamiento finalizado (I=0, O=0, R=35, W=20, U=0, E=0)
-
-2026/11/24 22:39:55 - Conservar reservas sin cobro.0 - Procesamiento finalizado (I=0, O=0, R=20, W=5, U=0, E=0)
-
-2026/11/24 22:39:55 - Ordenar sin cobro por id_hotel.0 - Procesamiento finalizado (I=0, O=0, R=5, W=5, U=0, E=0)
-
-2026/11/24 22:39:55 - A�adir hotel a reservas sin cobro.0 - Procesamiento finalizado (I=0, O=0, R=10, W=5, U=0, E=0)
-
-2026/11/24 22:39:55 - Select values.0 - Procesamiento finalizado (I=0, O=0, R=5, W=5, U=0, E=0)
-
-2026/11/24 22:39:55 - A�adir motivo.0 - Procesamiento finalizado (I=0, O=0, R=5, W=5, U=0, E=0)
-
-2026/11/24 22:39:55 - Ordenar resultados por id_reserva.0 - Procesamiento finalizado (I=0, O=0, R=5, W=5, U=0, E=0)
-
-2026/11/24 22:39:55 - Escribir reservas sin cobro.0 - Procesamiento finalizado (I=0, O=6, R=5, W=5, U=0, E=0)
-
-2026/11/24 22:39:55 - cierre_hotel - Starting entry [validar_informe]
-
-2026/11/24 22:39:55 - validar_informe - Iniciado despacho de la transformaci?n [validar_informe]
-
-2026/11/24 22:39:55 - Leer informe.0 - Header row skipped in file '${RUTA}/informe_hotel_canal.csv'
-
-2026/11/24 22:39:55 - Leer informe.0 - Procesamiento finalizado (I=14, O=0, R=0, W=26, U=0, E=0)
-
-2026/11/24 22:39:55 - Comprobar filas y valores.0 - Procesamiento finalizado (I=0, O=0, R=13, W=13, U=0, E=0)
-
-2026/11/24 22:39:55 - Detectar informe sin filas.0 - Procesamiento finalizado (I=0, O=0, R=13, W=0, U=0, E=0)
-
-2026/11/24 22:39:55 - Resumir informe.0 - Procesamiento finalizado (I=0, O=0, R=13, W=1, U=0, E=0)
-
-2026/11/24 22:39:55 - Comprobar totales.0 - Procesamiento finalizado (I=0, O=0, R=1, W=1, U=0, E=0)
-
-2026/11/24 22:39:55 - Informe correcto.0 - Procesamiento finalizado (I=0, O=0, R=1, W=1, U=0, E=0)
-
-2026/11/24 22:39:55 - cierre_hotel - Starting entry [validar_sin_cobro]
-
-2026/11/24 22:39:55 - validar_sin_cobro - Iniciado despacho de la transformaci?n [validar_sin_cobro]
-
-2026/11/24 22:39:55 - Leer reservas sin cobro.0 - Header row skipped in file '${RUTA}/reservas_sin_cobro.csv'
-
-2026/11/24 22:39:55 - Leer reservas sin cobro.0 - Procesamiento finalizado (I=6, O=0, R=0, W=10, U=0, E=0)
-
-2026/11/24 22:39:55 - Detectar listado sin filas.0 - Procesamiento finalizado (I=0, O=0, R=5, W=0, U=0, E=0)
-
-2026/11/24 22:39:55 - Comprobar datos.0 - Procesamiento finalizado (I=0, O=0, R=5, W=5, U=0, E=0)
-
-2026/11/24 22:39:55 - Comprobar IDs esperados.0 - Procesamiento finalizado (I=0, O=0, R=5, W=5, U=0, E=0)
-
-2026/11/24 22:39:55 - Contar por ID.0 - Procesamiento finalizado (I=0, O=0, R=5, W=5, U=0, E=0)
-
-2026/11/24 22:39:55 - Comprobar que no hay duplicados.0 - Procesamiento finalizado (I=0, O=0, R=5, W=5, U=0, E=0)
-
-2026/11/24 22:39:55 - Resumen de IDs.0 - Procesamiento finalizado (I=0, O=0, R=5, W=1, U=0, E=0)
-
-2026/11/24 22:39:55 - Comprobar cantidad e IDs.0 - Procesamiento finalizado (I=0, O=0, R=1, W=1, U=0, E=0)
-
-2026/11/24 22:39:55 - Listado correcto.0 - Procesamiento finalizado (I=0, O=0, R=1, W=1, U=0, E=0)
-
-2026/11/24 22:39:55 - cierre_hotel - Starting entry [Publicar salidas]
-
-2026/11/24 22:39:55 - Publicar salidas - Starting ...
-
-2026/11/24 22:39:55 - Publicar salidas - Processing row source File/folder source : [${RUTA}/informe_hotel_canal.csv] ... destination file/folder : [${RUTA}/informe_hotel_canal.csv]... wildcard : [null]
-
-2026/11/24 22:39:55 - Publicar salidas - Processing row source File/folder source : [${RUTA}/reservas_sin_cobro.csv] ... destination file/folder : [${RUTA}/reservas_sin_cobro.csv]... wildcard : [null]
-
-2026/11/24 22:39:55 - cierre_hotel - Starting entry [Finalizado]
-
-2026/11/24 22:39:55 - cierre_hotel - Finished job entry [Finalizado] (result=[true])
-
-2026/11/24 22:39:55 - cierre_hotel - Finished job entry [Publicar salidas] (result=[true])
-
-2026/11/24 22:39:55 - cierre_hotel - Finished job entry [validar_sin_cobro] (result=[true])
-
-2026/11/24 22:39:55 - cierre_hotel - Finished job entry [validar_informe] (result=[true])
-
-2026/11/24 22:39:55 - cierre_hotel - Finished job entry [reservas_sin_cobro] (result=[true])
-
-2026/11/24 22:39:55 - cierre_hotel - Finished job entry [informe_cobros] (result=[true])
-
-2026/11/24 22:39:55 - cierre_hotel - Job execution finished
-
-2026/11/24 22:39:55 - Kitchen - Finished!
-
-2026/11/24 22:39:55 - Kitchen - Start=2026/11/24 22:39:54.000, Stop=2026/11/24 22:39:55.863
-
-2026/11/24 22:39:55 - Kitchen - Processing ended after 1 seconds.
+Prueba: 06_recuperacion
+Entorno: PDI 9.4.0.0-343 y Java 8
+Comando: ${PDI_HOME}/kitchen.sh -file=${RUTA_PROYECTO}/procesos/cierre_hotel.kjb -level=Basic
+Código de salida: 0
+
+2026/11/25 18:10:43 - Kitchen - Logging is at level : Basic
+2026/11/25 18:10:43 - Kitchen - Start of run.
+2026/11/25 18:10:46 - cierre_hotel - Start of job execution
+2026/11/25 18:10:46 - cierre_hotel - Starting entry [informe_cobros]
+2026/11/25 18:10:46 - Leer_cobros - Dispatching started for transformation [Leer_cobros]
+2026/11/25 18:10:46 - Leer reservas.0 - Header row skipped in file 'file://${RUTA_PROYECTO}/procesos/../entrada/reservas_pdi.csv'
+2026/11/25 18:10:46 - Leer_cobros.0 - Header row skipped in file 'file://${RUTA_PROYECTO}/procesos/../entrada/cobros_pdi.csv'
+2026/11/25 18:10:46 - Leer_hoteles.0 - Header row skipped in file 'file://${RUTA_PROYECTO}/procesos/../entrada/hoteles_pdi.csv'
+2026/11/25 18:10:46 - Leer_hoteles.0 - Finished processing (I=6, O=0, R=0, W=5, U=0, E=0)
+2026/11/25 18:10:46 - Leer_cobros.0 - Finished processing (I=16, O=0, R=0, W=15, U=0, E=0)
+2026/11/25 18:10:46 - Leer reservas.0 - Finished processing (I=21, O=0, R=0, W=20, U=0, E=0)
+2026/11/25 18:10:46 - Ordenar hoteles por id_hotel.0 - Finished processing (I=0, O=0, R=5, W=5, U=0, E=0)
+2026/11/25 18:10:46 - Ordenar cobros por id_reserva.0 - Finished processing (I=0, O=0, R=15, W=15, U=0, E=0)
+2026/11/25 18:10:46 - Ordenar reservas por id_reserva.0 - Finished processing (I=0, O=0, R=20, W=20, U=0, E=0)
+2026/11/25 18:10:47 - Unir reservas y cobros.0 - Finished processing (I=0, O=0, R=35, W=15, U=0, E=0)
+2026/11/25 18:10:47 - Ordenar cobros unidos por id_hotel.0 - Finished processing (I=0, O=0, R=15, W=15, U=0, E=0)
+2026/11/25 18:10:47 - Añadir nombre del hotel.0 - Finished processing (I=0, O=0, R=20, W=15, U=0, E=0)
+2026/11/25 18:10:47 - Ordenar por hotel y canal.0 - Finished processing (I=0, O=0, R=15, W=15, U=0, E=0)
+2026/11/25 18:10:47 - Agrupar cobros por hotel y canal.0 - Finished processing (I=0, O=0, R=15, W=13, U=0, E=0)
+2026/11/25 18:10:47 - Escribir informe provisional.0 - Finished processing (I=0, O=14, R=13, W=13, U=0, E=0)
+2026/11/25 18:10:47 - cierre_hotel - Starting entry [reservas_sin_cobro]
+2026/11/25 18:10:47 - Escribir reservas sin cobro - Dispatching started for transformation [Escribir reservas sin cobro]
+2026/11/25 18:10:47 - Leer cobros.0 - Header row skipped in file 'file://${RUTA_PROYECTO}/procesos/../entrada/cobros_pdi.csv'
+2026/11/25 18:10:47 - Leer reservas.0 - Header row skipped in file 'file://${RUTA_PROYECTO}/procesos/../entrada/reservas_pdi.csv'
+2026/11/25 18:10:47 - Leer hoteles.0 - Header row skipped in file 'file://${RUTA_PROYECTO}/procesos/../entrada/hoteles_pdi.csv'
+2026/11/25 18:10:47 - Leer hoteles.0 - Finished processing (I=6, O=0, R=0, W=5, U=0, E=0)
+2026/11/25 18:10:47 - Leer cobros.0 - Finished processing (I=16, O=0, R=0, W=15, U=0, E=0)
+2026/11/25 18:10:47 - Ordenar hoteles por id_hotel.0 - Finished processing (I=0, O=0, R=5, W=5, U=0, E=0)
+2026/11/25 18:10:47 - Preparar clave de cobros.0 - Finished processing (I=0, O=0, R=15, W=15, U=0, E=0)
+2026/11/25 18:10:47 - Leer reservas.0 - Finished processing (I=21, O=0, R=0, W=20, U=0, E=0)
+2026/11/25 18:10:47 - Ordenar cobros por clave.0 - Finished processing (I=0, O=0, R=15, W=15, U=0, E=0)
+2026/11/25 18:10:47 - Ordenar reservas por id_reserva.0 - Finished processing (I=0, O=0, R=20, W=20, U=0, E=0)
+2026/11/25 18:10:47 - Relacionar reservas con cobros.0 - Finished processing (I=0, O=0, R=35, W=20, U=0, E=0)
+2026/11/25 18:10:47 - Conservar reservas sin cobro.0 - Finished processing (I=0, O=0, R=20, W=5, U=0, E=0)
+2026/11/25 18:10:47 - Ordenar sin cobro por id_hotel.0 - Finished processing (I=0, O=0, R=5, W=5, U=0, E=0)
+2026/11/25 18:10:48 - Añadir hotel a reservas sin cobro.0 - Finished processing (I=0, O=0, R=10, W=5, U=0, E=0)
+2026/11/25 18:10:48 - Select values.0 - Finished processing (I=0, O=0, R=5, W=5, U=0, E=0)
+2026/11/25 18:10:48 - Añadir motivo.0 - Finished processing (I=0, O=0, R=5, W=5, U=0, E=0)
+2026/11/25 18:10:48 - Ordenar resultados por id_reserva.0 - Finished processing (I=0, O=0, R=5, W=5, U=0, E=0)
+2026/11/25 18:10:48 - Escribir reservas sin cobro.0 - Finished processing (I=0, O=6, R=5, W=5, U=0, E=0)
+2026/11/25 18:10:48 - cierre_hotel - Starting entry [validar_informe]
+2026/11/25 18:10:48 - validar_informe - Dispatching started for transformation [validar_informe]
+2026/11/25 18:10:48 - Leer informe.0 - Header row skipped in file 'file://${RUTA_PROYECTO}/procesos/../temporal/informe_hotel_canal.csv'
+2026/11/25 18:10:48 - Leer informe.0 - Finished processing (I=14, O=0, R=0, W=26, U=0, E=0)
+2026/11/25 18:10:48 - Detectar informe sin filas.0 - Finished processing (I=0, O=0, R=13, W=0, U=0, E=0)
+2026/11/25 18:10:48 - Comprobar filas y valores.0 - Finished processing (I=0, O=0, R=13, W=13, U=0, E=0)
+2026/11/25 18:10:48 - Resumir informe.0 - Finished processing (I=0, O=0, R=13, W=1, U=0, E=0)
+2026/11/25 18:10:48 - Comprobar totales.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2026/11/25 18:10:48 - Informe correcto.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2026/11/25 18:10:48 - cierre_hotel - Starting entry [validar_sin_cobro]
+2026/11/25 18:10:48 - validar_sin_cobro - Dispatching started for transformation [validar_sin_cobro]
+2026/11/25 18:10:48 - Leer reservas sin cobro.0 - Header row skipped in file 'file://${RUTA_PROYECTO}/procesos/../temporal/reservas_sin_cobro.csv'
+2026/11/25 18:10:48 - Leer reservas sin cobro.0 - Finished processing (I=6, O=0, R=0, W=10, U=0, E=0)
+2026/11/25 18:10:48 - Detectar listado sin filas.0 - Finished processing (I=0, O=0, R=5, W=0, U=0, E=0)
+2026/11/25 18:10:48 - Comprobar datos.0 - Finished processing (I=0, O=0, R=5, W=5, U=0, E=0)
+2026/11/25 18:10:48 - Comprobar IDs esperados.0 - Finished processing (I=0, O=0, R=5, W=5, U=0, E=0)
+2026/11/25 18:10:48 - Contar por ID.0 - Finished processing (I=0, O=0, R=5, W=5, U=0, E=0)
+2026/11/25 18:10:48 - Comprobar que no hay duplicados.0 - Finished processing (I=0, O=0, R=5, W=5, U=0, E=0)
+2026/11/25 18:10:48 - Resumen de IDs.0 - Finished processing (I=0, O=0, R=5, W=1, U=0, E=0)
+2026/11/25 18:10:48 - Comprobar cantidad e IDs.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2026/11/25 18:10:48 - Listado correcto.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2026/11/25 18:10:48 - cierre_hotel - Starting entry [Publicar salidas]
+2026/11/25 18:10:48 - Publicar salidas - Starting ...
+2026/11/25 18:10:48 - Publicar salidas - Processing row source File/folder source : [file://${RUTA_PROYECTO}/temporal/informe_hotel_canal.csv] ... destination file/folder : [file://${RUTA_PROYECTO}/salida/informe_hotel_canal.csv]... wildcard : [null]
+2026/11/25 18:10:48 - Publicar salidas - Processing row source File/folder source : [file://${RUTA_PROYECTO}/temporal/reservas_sin_cobro.csv] ... destination file/folder : [file://${RUTA_PROYECTO}/salida/reservas_sin_cobro.csv]... wildcard : [null]
+2026/11/25 18:10:48 - cierre_hotel - Starting entry [Finalizado]
+2026/11/25 18:10:48 - cierre_hotel - Finished job entry [Finalizado] (result=[true])
+2026/11/25 18:10:48 - cierre_hotel - Finished job entry [Publicar salidas] (result=[true])
+2026/11/25 18:10:48 - cierre_hotel - Finished job entry [validar_sin_cobro] (result=[true])
+2026/11/25 18:10:48 - cierre_hotel - Finished job entry [validar_informe] (result=[true])
+2026/11/25 18:10:48 - cierre_hotel - Finished job entry [reservas_sin_cobro] (result=[true])
+2026/11/25 18:10:48 - cierre_hotel - Finished job entry [informe_cobros] (result=[true])
+2026/11/25 18:10:48 - cierre_hotel - Job execution finished
+2026/11/25 18:10:48 - Kitchen - Finished!
+2026/11/25 18:10:48 - Kitchen - Start=2026/11/25 18:10:46.334, Stop=2026/11/25 18:10:48.305
+2026/11/25 18:10:48 - Kitchen - Processing ended after 1 seconds.
