@@ -18,4 +18,4 @@ La solución funcional quedó completa. La revisión posterior de la rúbrica de
 
 ## Ayudas y procedencia de este registro
 
-Este documento se ha reconstruido a partir del commit indicado y de los logs conservados. Para la revisión final se consultó OpenAI Codex como apoyo para localizar omisiones de la rúbrica y contrastar la documentación y las pruebas. La autoría y las decisiones del proyecto corresponden a Lucia Ruiz Diaz.
+Este documento se ha reconstruido a partir del commit indicado y de los logs conservados. Para la revisión final se consultó OpenAI Codex como apoyo para localizar omisiones de la rúbrica y contrastar la documentación y las pruebas.

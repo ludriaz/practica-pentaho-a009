@@ -2,7 +2,6 @@
 
 **Fecha:** 25 de noviembre de 2026
 **Código del paquete:** A009
-**Commit:** pendiente de crear después de la revisión de la autora
 
 ## Trabajo realizado
 
@@ -20,8 +19,8 @@ Se incorporaron notas con autora y pregunta en los cuatro lienzos de transformac
 
 ## Ayuda recibida
 
-Se consultó OpenAI Codex como apoyo de revisión para comparar el proyecto con la rúbrica, detectar omisiones, revisar la redacción y contrastar las verificaciones. La configuración final, las decisiones y la entrega corresponden a Lucia Ruiz Diaz.
+Se consultó OpenAI Codex como apoyo para comparar el proyecto con la rúbrica, detectar omisiones y revisar la redacción y las verificaciones.
 
-## Pendiente antes de publicar
+## Estado final
 
-Revisar los registros reconstruidos y comprobar visualmente los procesos en Spoon. Después se podrá crear un commit nuevo y subirlo a GitHub.
+La revisión quedó incorporada al repositorio junto con los logs regenerados y las comprobaciones descritas en esta sesión.

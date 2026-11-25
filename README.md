@@ -125,6 +125,6 @@ Los avances reconstruidos desde el historial Git están documentados en `evidenc
 - Enunciado y rúbrica: [Práctica integradora del informe del hotel con Pentaho](https://iesataulfoargentasor.github.io/bda_2026_2027/ut1/tarea-clase/).
 - Material de los talleres de Pentaho Data Integration 9.4 proporcionado en el aula.
 - Spoon para diseñar y revisar los procesos; Pan y Kitchen para ejecutarlos y guardar evidencias.
-- Como apoyo final se consultó OpenAI Codex para comprobar la correspondencia con la rúbrica, revisar la claridad del README y contrastar la ejecución de las pruebas. La autoría, las decisiones de diseño y la defensa del proyecto corresponden a Lucia Ruiz Diaz.
+- Como apoyo final se consultó OpenAI Codex para comprobar la correspondencia con la rúbrica, revisar la claridad del README y contrastar la ejecución de las pruebas.
 
 La estructura de los procesos, las uniones, validaciones, resultados y pruebas se han adaptado al paquete personal A009. No se han sustituido las entradas por los CSV comunes de los talleres ni se han modificado los originales.
